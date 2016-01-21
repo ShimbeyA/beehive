@@ -1,17 +1,26 @@
 <?php
+
 class BeesampleModel{
-	protected $db
+	var $db;
 	
-	public function_contruct(PDO $db){
+	public function __construct(PDO $db){
             $this->db= $db;
 	
 	}
 	
-	public function_getAllObservation(){
+	public function getAllObservation(){
+            
+        
+        
             return $this->db->query('SELECT * FROM bee_samples');
-	
+        }
 	}
 
-	}
 	
-?>;
+	
+?>
+
+
+
+
+

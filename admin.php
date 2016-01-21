@@ -8,7 +8,7 @@
                 $password='Dancers1';
                 $db = new PDO("mysql:host=$hostname;dbname=$database_name",
                               $username, $password);
-                 echo 'Connected to database';
+                 //echo 'Connected to database';
                 }
                 catch(PDOException $e)
                 {
@@ -16,7 +16,7 @@
                     
                 }
 	
-        // make mode available
+        // make model available
         include 'model/beesampleModel.php';
         
         // create an instance
